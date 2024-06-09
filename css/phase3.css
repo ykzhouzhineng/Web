@@ -56,4 +56,6 @@ footer {
     border: 1px solid red;
     background-color: blanchedalmond;
     margin: auto;
+    background-image: url("../imgs/CSS.jpg");
+    background-size: cover;
 }
