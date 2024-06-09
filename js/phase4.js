@@ -5,7 +5,7 @@ if (window.innerWidth > 600) {
 } else {
     UI.appWidth = window.innerWidth;
 }
-    
+
 
 UI.appHeight = window.innerHeight;
 
@@ -69,6 +69,13 @@ $("bookface").addEventListener("mousemove", function (ev) {
         $('bookface').style.left = mouse.deltaX + 'px';
     }
 
+});
+$("body").addEventListener("keypress", function (ev) {
+    let k = ev.key;
+    let c = ev.keyCode;
+    let s1 = "按键是：";
+    let s2 = "编码是："
+    $("keyboard").textContent = s1 + k + ";" + s2 + c;
 });
 
 
